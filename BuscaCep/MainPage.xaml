@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BuscaCep.MainPage">
+    <StackLayout BackgroundColor="#FFBF00"
+                 Padding="30" Spacing="30">
+
+        <Image Source="logo.png" x:Name="logo">
+        </Image>
+
+        <Entry Placeholder="Digite o CEP"
+                   PlaceholderColor="#FFBF00"
+                   BackgroundColor="White"
+                   x:Name="CEP"/>
+        <Button Text="Buscar Cep"
+                TextColor="White"
+                BackgroundColor="#00416B"
+                x:Name="Botao"
+                Clicked="BuscaCep">
+        </Button>
+        <Label Text="Resultado da Busca"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               x:Name="Resultado">
+        </Label>
+
+
+    </StackLayout>
+
+
+</ContentPage>
